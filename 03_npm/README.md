@@ -4,7 +4,7 @@
 
 - formally called _Node Package Manager_
 - consists of three components
-  - [website](www.npmjs.com)
+  - [website](https://www.npmjs.com)
     - description of available packages
   - registry
     - contains all packages which are described at the website
@@ -133,7 +133,7 @@ You can find more details at [semver.org](semver.org).
 - you can execute it with following command:
 
   ```bash
-  $ ./node_modules/.bin/cowsay “Hello world!“
+  $ ./node_modules/.bin/cowsay "Hello world!"
   ```
 
 - but the preferred way for executing a package is by using `npx`:
