@@ -100,6 +100,20 @@ You can find more details at [semver.org](semver.org).
 - `^5.0.1` means
   - take most recent 5.x.x version
 
+## Install a specific _Chalk_ version
+
+- you can uninstall *Chalk* via npm:
+
+  ```bash
+  $ npm install chalk
+  ```
+
+- you can install a specific version (e.g. V4):
+
+  ```bash
+  $ npm install chalk@4
+  ```
+
 ## Import the installed _Chalk_ package
 
 - create a file `index.js` with following content:
@@ -169,6 +183,7 @@ The purpose of this file is following:
 - The currently latest matches of the dependencies as given in `package.json` are downloaded into `node_modules` and written into `package-lock.json`.
 - If you add this file to your git repository, all your team mates will use exactly the same library versions on their local machines after pulling the repo and calling `npm install`, even if there would be newer library versions available meanwhile.
 
-### npm update
+## `npm update`
 
-If you want to upgrade your project to newer library versions, use `npm update`. This will also update your `node_modules` as well as the `package-lock.json` file.
+- If you want to upgrade your project to newer library versions, use `npm update`. 
+- This will also update your `node_modules` as well as the `package-lock.json` file.
