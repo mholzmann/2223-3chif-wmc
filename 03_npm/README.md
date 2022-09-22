@@ -105,7 +105,7 @@ You can find more details at [semver.org](semver.org).
 - you can uninstall *Chalk* via npm:
 
   ```bash
-  $ npm install chalk
+  $ npm uninstall chalk
   ```
 
 - you can install a specific version (e.g. V4):
