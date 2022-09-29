@@ -36,8 +36,7 @@
 
 ## Create a `package.json`
 
-- create an empty directory called `npm-demo`
-- open the directory in your terminal
+- open the project directory in your terminal
 
 - run the following command:
 
@@ -64,7 +63,7 @@
 - you can check the installed _Chalk_ version with following command:
 
   ```bash
-  $ npm list --depth=0
+  $ npm list
   ```
 
 - additionally you will find a dependency of _Chalk_ in `package.json`:
@@ -166,7 +165,7 @@ You can find more details at [semver.org](semver.org).
 - run following command for seeing all installed packages:
 
   ```bash
-  $ npm list
+  $ npm list --all
   ```
 
 - `NODE_MODULES` can contain large number of files
