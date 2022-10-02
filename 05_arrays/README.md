@@ -6,7 +6,7 @@ In JavaScript, arrays aren't [primitives](https://developer.mozilla.org/en-US/do
 
 - **JavaScript arrays can contain a mix of different data types and are resizable:**
 
-  ```JavaScript
+  ```JavaScript [1-2|3]
   let myArray = [1, 'hello', true];
   myArray.push('world'); 
   console.log(myArray); // output: [1, 'hello', true, 'world']
