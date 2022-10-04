@@ -3,6 +3,7 @@
 ## What is `npm`?
 
 - Formally called _Node Package Manager_
+
 - Consists of three components:
   - [website](https://www.npmjs.com)
     - description of available packages
@@ -19,12 +20,12 @@
 
 - Manage your project dependencies
   - install / uninstall / update packages
+  
 - Publish your own project to `npm` registry
 
 ## Project dependencies
 
 - Following problems have to be solved in every software, which depends on other libraries:
-
   - How to define which dependencies the application needs?
   - How to find out if dependencies should be updated?
   - How to reinstall dependencies on a target machine?
@@ -73,7 +74,6 @@
   > npm-demo@1.0.0 /home/mh/node/npm-demo
   > └── chalk@5.0.1
   ```
-
   <!---->
 
 - Additionally you will find a new dependency in `package.json`:
@@ -100,11 +100,9 @@
 - Version number format: MAJOR.MINOR.PATCH
 
 - `5.0.1` means
-
   - MAJOR=5
   - MINOR=0
   - PATCH=1
-
   <!---->
 
 - Increment …
@@ -117,7 +115,6 @@
 ## Versions in `package.json`
 
 - `5.0.1` means
-
   - install exactly version 5.0.1
 
 - `~5.0.1` means
@@ -160,7 +157,6 @@
 - [Cowsay](https://www.npmjs.com/package/cowsay) is a package for showing a configurable talking cow
 
 - `npm install cowsay`
-
   - installs the package to `node_modules/cowsay`
   - Installs the executables to `node_modules/.bin`
   
@@ -188,14 +184,12 @@
   ```
   
 - `NODE_MODULES` can contain a lot of files
-
   - don't copy it from machine to machine
   - never (!!!) add it to a Git repository
 
 ## Git ignore `node_modules`
 
 - Create a file called `.gitignore` in your Git Repository
-
   - the file must be named exactly like that
   - so don't called it e.g. `.gitignore.txt`
 
@@ -205,14 +199,11 @@
   node_modules/
   ```
 
-  
-
 ## `package-lock.json`
 
 - `npm install` also creates the file `package-lock.json`
 
 - The latest matches of the dependencies as given in `package.json` are ...
-
   - ... downloaded into `node_modules`
   - ... written into `package-lock.json`
 
@@ -221,7 +212,6 @@
 - Add `package-lock.json` to your Git repository
 
 - After that your team mates can pull the repo and call `npm install`
-
   - all of them will get the same package versions as you
   - even if a newer version would already be available
 
@@ -234,7 +224,6 @@
   ```
 
 - This will update `node_modules` and `package-lock.json`
-
   - with respect to the restriction in `package.json`
 
   
