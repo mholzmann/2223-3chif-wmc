@@ -46,7 +46,7 @@
 - The result is the file `app.js`. Run it, as usual:
 
   ```bash
-  $ tsc app.ts --target es6
+  $ node app.js
   ```
 
 ## Basic Types
