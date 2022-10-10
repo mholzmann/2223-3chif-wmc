@@ -59,13 +59,13 @@
 - The array method `find()` is such a higher-order function
 
   ```typescript [0|1-3|5|7|9]
-  function isBiggerThanTen(x: number) {
+  function isBiggerThanTen(x: number): boolean {
       return x > 10;
   }
   
-  const array = [5, 12, 8, 130, 44];
+  const array: number[] = [5, 12, 8, 130, 44];
   
-  const found = array.find(isBiggerThanTen);
+  const found: number = array.find(isBiggerThanTen);
   
   console.log(found); // output: 12
   ```
@@ -83,9 +83,9 @@
 - A function argument can be passed, without giving it a name
 
   ```typescript [0|3-5]
-  const array = [5, 12, 8, 130, 44];
+  const array: number[] = [5, 12, 8, 130, 44];
   
-  const found = array.find(function (x) {
+  const found: number = array.find(function (x) {
       return x > 10;
   });
   
@@ -105,9 +105,9 @@
 - They are often used as _anonymous functions_:
 
   ```typescript [0|3-5]
-  const array = [5, 12, 8, 130, 44];
+  const array: number[] = [5, 12, 8, 130, 44];
   
-  const found = array.find((x) => {
+  const found: number = array.find((x) => {
       return x > 10;
   });
   
@@ -126,9 +126,9 @@
 - So the *arrow function* from the last example can be simplified:
 
   ```typescript [0|3]
-  const array = [5, 12, 8, 130, 44];
+  const array: number[] = [5, 12, 8, 130, 44];
   
-  const found = array.find(x => x > 10);
+  const found: number = array.find(x => x > 10);
   
   console.log(found); // output: 12
   ```
