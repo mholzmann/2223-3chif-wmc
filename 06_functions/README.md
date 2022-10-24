@@ -11,7 +11,7 @@
   
   let myAdd = function(x, y) {
   	return x + y;
-  }
+  };
   ```
   <!---->
 
@@ -27,7 +27,7 @@
   
   let myAdd = function(x: number, y: number): number {
   	return x + y;
-  }
+  };
   ```
 
 <!---->
@@ -41,7 +41,7 @@
   
   let myAdd = function(x: number, y: number) {
       return x + y;
-  }
+  };
   ```
 
 ## Functions are objects
@@ -65,7 +65,7 @@
   
   const array: number[] = [5, 12, 8, 130, 44];
   
-  const found: number = array.find(isBiggerThanTen);
+  const found: number | undefined = array.find(isBiggerThanTen);
   
   console.log(found); // output: 12
   ```
@@ -85,7 +85,7 @@
   ```typescript [0|3-5]
   const array: number[] = [5, 12, 8, 130, 44];
   
-  const found: number = array.find(function (x) {
+  const found: number | undefined = array.find(function (x) {
       return x > 10;
   });
   
@@ -107,7 +107,7 @@
   ```typescript [0|3-5]
   const array: number[] = [5, 12, 8, 130, 44];
   
-  const found: number = array.find((x) => {
+  const found: number | undefined = array.find((x) => {
       return x > 10;
   });
   
@@ -128,7 +128,7 @@
   ```typescript [0|3]
   const array: number[] = [5, 12, 8, 130, 44];
   
-  const found: number = array.find(x => x > 10);
+  const found: number | undefined = array.find(x => x > 10);
   
   console.log(found); // output: 12
   ```
