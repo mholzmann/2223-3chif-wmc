@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: rgb(211, 111, 64);
+    font-size: 10vh;
+    margin: 0
+}
+
+h2 {
+    color: rgb(211, 111, 64);
+    font-size: 7vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(34, 34, 34);
+    width: 100vw;
+    height: 100vh;
+}
