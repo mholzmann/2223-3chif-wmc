@@ -20,7 +20,7 @@ console.log('------------------------');
 
 const oddIndexes = array.filter((value, index) => index % 2 === 1);
 console.log(oddIndexes);
-// output: [ 44, 0, -6]
+// output: [ 44, 0, -6 ]
 
 
 console.log('------------------------');
@@ -29,6 +29,14 @@ console.log('------------------------');
 const firstNegative = array.find(value => value < 0);
 console.log(firstNegative);
 // output: -3
+
+
+console.log('------------------------');
+
+
+const sorted = array.sort((a, b) => a - b);
+console.log(sorted);
+// output: [ -6, -3, 0, 7, 11, 44, 66 ]
 
 
 console.log('------------------------');
