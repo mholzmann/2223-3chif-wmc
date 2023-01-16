@@ -11,7 +11,7 @@ console.log('\n*** could do something else meanwhile ***\n');
 async function mergeFiles() {
     try {
         console.log('reading part1.txt ...');
-        const path1 = join(__dirname, 'files', 'part1.txt')
+        const path1 = join(__dirname, 'files', 'part15.txt')
         let text = await readFile(path1, 'utf8');
         console.log('read file successfully');
 
@@ -24,7 +24,7 @@ async function mergeFiles() {
         const pathMerged = join(__dirname, 'files', 'merged-with-promises.txt')
         await writeFile(pathMerged, text);
         console.log('wrote file successfully');
-    } catch (error) {
-        console.log(error);
+    } catch (err: any) {
+        console.error(err.message);
     }
 }

@@ -13,8 +13,8 @@ async function readPerson() {
         }
         console.log(person.age + 1);
         
-    } catch (error) {
-        console.log(error);
+    } catch (err: any) {
+        console.error(err.message);
     }
 }
 

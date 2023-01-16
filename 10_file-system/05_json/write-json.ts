@@ -16,7 +16,7 @@ async function savePerson() {
         const jsonString = JSON.stringify(person, null, '\t');
         await writeFile('person.json', jsonString);
         console.log('file written successfully');
-    } catch (error) {
-        console.log(error);
+    } catch (err: any) {
+        console.error(err.message);
     }
 }
