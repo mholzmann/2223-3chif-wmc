@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+      "target": "ES2021",              // Set the JavaScript language version for emitted JavaScript and include compatible library declarations.
+      "module": "ESNext",           // Specify what module code is generated.
+      "strict": true,               // Enable all strict type-checking options.
+      "sourceMap": true,            // Create source map files for emitted JavaScript files.
+    }
+}
