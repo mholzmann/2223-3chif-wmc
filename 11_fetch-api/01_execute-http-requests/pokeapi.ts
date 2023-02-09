@@ -1,6 +1,10 @@
 
 // For starting the typescript compiler in watchmode run 'tsc --watch'
 
+function handleClick() {
+    loadPokemon();
+}
+
 // Fetches a pokemon in JSON format over the network
 async function loadPokemon(): Promise<void> {
     // The simplest use of fetch() takes one argument — the path to the resource you want to fetch — and returns a promise containing the response (a Response object).

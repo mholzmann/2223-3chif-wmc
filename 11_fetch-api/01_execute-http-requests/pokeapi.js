@@ -9,6 +9,9 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+function handleClick() {
+    loadPokemon();
+}
 // Fetches a pokemon in JSON format over the network
 function loadPokemon() {
     return __awaiter(this, void 0, void 0, function* () {

@@ -7,8 +7,8 @@
     <script src="pokeapi.js" defer></script>
 </head>
 <body>
-    <form id="pokemon-form">
-        <input type="text" name="pokemon" id="pokemon">
+    <form onsubmit="handleSubmit(event)">
+        <input type="text" id="name-input">
         <button>Catch</button>
     </form>
     <p id="result"></p>

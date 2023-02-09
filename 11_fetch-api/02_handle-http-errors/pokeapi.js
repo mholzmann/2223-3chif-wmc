@@ -10,20 +10,18 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 // Prevent redirection on form submit and load pokemon instead
-const pokemonForm = document.getElementById('pokemon-form');
-pokemonForm.addEventListener('submit', event => {
+function handleSubmit(event) {
     event.preventDefault();
-    loadPokemon();
-});
+    const nameInput = document.getElementById('name-input');
+    loadPokemon(nameInput.value);
+}
 // Fetches a pokemon in JSON format over the network
-function loadPokemon() {
+function loadPokemon(pokemonName) {
     return __awaiter(this, void 0, void 0, function* () {
         const resultElement = document.getElementById('result');
-        const pokemonInput = document.getElementById('pokemon');
-        const name = pokemonInput.value;
         try {
             // Trying to fetch a pokemon which might not exist
-            const response = yield fetch(`https://pokeapi.co/api/v2/pokemon/${name.toLowerCase()}/`);
+            const response = yield fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName.toLowerCase()}/`);
             if (response.ok) {
                 // Executed if the response was successfull (HTTP status code in the range 200-299)
                 const pokemon = yield response.json();

@@ -1,21 +1,19 @@
 // For starting the typescript compiler in watchmode run 'tsc --watch'
 
 // Prevent redirection on form submit and load pokemon instead
-const pokemonForm: HTMLFormElement = document.getElementById('pokemon-form') as HTMLFormElement;
-pokemonForm.addEventListener('submit', event => {
+function handleSubmit(event: Event) {
     event.preventDefault();
-    loadPokemon();
-});
+    const nameInput = document.getElementById('name-input') as HTMLInputElement;
+    loadPokemon(nameInput.value);
+}
 
 // Fetches a pokemon in JSON format over the network
-async function loadPokemon() {
+async function loadPokemon(pokemonName: string) {
     const resultElement: HTMLElement = document.getElementById('result');
-    const pokemonInput: HTMLInputElement = document.getElementById('pokemon') as HTMLInputElement;
-    const name: string = pokemonInput.value;
 
     try {
         // Trying to fetch a pokemon which might not exist
-        const response: Response = await fetch(`https://pokeapi.co/api/v2/pokemon/${name.toLowerCase()}/`);
+        const response: Response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName.toLowerCase()}/`);
 
         if (response.ok) {
             // Executed if the response was successfull (HTTP status code in the range 200-299)
