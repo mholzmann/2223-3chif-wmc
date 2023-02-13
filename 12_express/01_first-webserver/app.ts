@@ -27,6 +27,6 @@ app.get("/:name", (req, res) => {
 });
 
 // start http server
-app.listen(3000, function () {
+app.listen(3000, () => {
     console.log("Server listening on port 3000");
 });
