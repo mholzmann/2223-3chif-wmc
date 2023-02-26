@@ -11,13 +11,13 @@ import { fruitRouter } from './fruit-router';
 const app = express();
 
 // mount middleware
-app.use(cors());
+app.use(cors());            // enable Cross-Origin Resorce Sharing
 app.use(express.json());    // parse JSON data and place result in req.body
 
 // mount router(s)
 app.use('/api/fruits', fruitRouter);
 
 // start http server
-app.listen(3000, function () {
+app.listen(3000, () => {
     console.log('Server listening on port 3000');
 });
