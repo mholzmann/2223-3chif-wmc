@@ -1,0 +1,6 @@
+```plantuml
+@startuml HTTP-Request-Response
+WebClient --> WebServer: HTTP Request
+WebServer --> WebClient: HTTP Response
+@enduml
+```
