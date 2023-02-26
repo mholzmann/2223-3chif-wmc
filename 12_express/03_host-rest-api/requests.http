@@ -1,0 +1,22 @@
+GET http://localhost:3000/api/fruits HTTP/1.1
+
+###
+
+GET http://localhost:3000/api/fruits/1
+
+###
+
+POST http://localhost:3000/api/fruits HTTP/1.1
+content-type: application/json
+
+{
+    "fruit": "strawberry"
+}
+
+###
+
+DELETE http://localhost:3000/api/fruits/1 HTTP/1.1
+
+###
+
+DELETE http://localhost:3000/api/fruits/ HTTP/1.1
