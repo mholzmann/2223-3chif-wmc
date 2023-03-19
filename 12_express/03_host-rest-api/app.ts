@@ -15,7 +15,7 @@ app.use(cors());            // enable Cross-Origin Resorce Sharing
 app.use(express.json());    // parse JSON data and place result in req.body
 
 // mount router(s)
-app.use('/api/fruit', fruitRouter);
+app.use('/api/fruits', fruitRouter);
 
 // start http server
 app.listen(3000, () => {

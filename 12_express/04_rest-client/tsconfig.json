@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+      "target": "es6",              // Set the JavaScript language version for emitted JavaScript and include compatible library declarations.
+      "module": "esnext",           // Specify what module code is generated.
+      "strict": true,               // Enable all strict type-checking options.
+      "sourceMap": true,            // Create source map files for emitted JavaScript files.
+      "strictNullChecks": false     // When type checking, dont't take into account null and undefined
+    }
+}

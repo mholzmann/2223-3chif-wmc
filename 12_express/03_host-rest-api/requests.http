@@ -1,12 +1,12 @@
-GET http://localhost:3000/api/fruit
+GET http://localhost:3000/api/fruits
 
 ###
 
-GET http://localhost:3000/api/fruit/1
+GET http://localhost:3000/api/fruits/1
 
 ###
 
-POST http://localhost:3000/api/fruit
+POST http://localhost:3000/api/fruits
 content-type: application/json
 
 {
@@ -15,8 +15,8 @@ content-type: application/json
 
 ###
 
-DELETE http://localhost:3000/api/fruit/1
+DELETE http://localhost:3000/api/fruits/1
 
 ###
 
-DELETE http://localhost:3000/api/fruit/
+DELETE http://localhost:3000/api/fruits/
